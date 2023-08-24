@@ -1,0 +1,11 @@
+.nav-button {
+  @apply text-white font-semibold opacity-30 hover:opacity-100 relative
+}
+
+.nav-button::after {
+  @apply content-[''] bg-white h-[2px] w-[0%] left-0 -bottom-[5px] absolute duration-300
+}
+
+.nav-button:hover::after {
+  @apply w-full
+}
