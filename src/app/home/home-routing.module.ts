@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {MainLayoutComponent} from "./components";
+import {HomeOverviewComponent} from "./containers/home-overview/home-overview.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: MainLayoutComponent
+    component: HomeOverviewComponent
   }
+
 ];
 
 @NgModule({
