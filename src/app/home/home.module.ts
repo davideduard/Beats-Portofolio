@@ -6,9 +6,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import * as fromComponents from './components';
 import * as fromContainers from './containers'
 import {HeaderNavComponent} from "../shared/components/header-nav/header-nav.component";
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
-  declarations: [...fromComponents.components, ...fromContainers.containers],
+  declarations: [...fromComponents.components, ...fromContainers.containers, HomePageComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

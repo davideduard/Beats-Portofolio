@@ -1,5 +1,5 @@
 .nav-button {
-  @apply text-white font-semibold opacity-30 hover:opacity-100 relative
+  @apply text-white font-vermin font-semibold opacity-30 hover:opacity-100 relative
 }
 
 .nav-button::after {
@@ -8,4 +8,12 @@
 
 .nav-button:hover::after {
   @apply w-full
+}
+
+.active {
+  @apply text-white opacity-100 #{!important}
+}
+
+.eq-bar {
+  @apply w-[4px] h-[40px] bg-magenta opacity-50
 }
