@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeOverviewComponent } from "./containers/home-overview/home-overview.component";
-import {HomePageComponent} from "./components";
+import {BeatsPageComponent, ContactPageComponent, HomePageComponent, KitsPageComponent} from "./components";
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     component: HomeOverviewComponent,
@@ -11,17 +12,22 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomePageComponent,
-        pathMatch: 'full'
+        pathMatch: 'full',
       },
       {
         path: 'beats',
-        component: HomePageComponent,
+        component: BeatsPageComponent,
         pathMatch: 'full'
       },
       {
         path: 'contact',
-        component: HomePageComponent,
+        component: ContactPageComponent,
         pathMatch: 'full'
+      },
+      {
+        path: 'kits',
+        component: KitsPageComponent,
+        pathMatch: "full"
       }
     ]
   },

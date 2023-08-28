@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 
 @Component({
   selector: 'app-home-overview',
@@ -10,6 +10,5 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./home-overview.component.scss']
 })
-export class HomeOverviewComponent {
-
+export class HomeOverviewComponent{
 }

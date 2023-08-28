@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
-  selector: 'app-header-nav',
+  selector: '' +
+    '' +
+    '' +
+    'app-header-nav',
   standalone: true,
   template: `
     <div class="w-full flex flex-row gap-8">
@@ -16,7 +19,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
         <button class="nav-button animate-fadeIn" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
         <button class="nav-button animate-fadeIn" routerLink="beats" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Beats</button>
         <button class="nav-button animate-fadeIn" routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</button>
-        <button class="nav-button animate-fadeIn" routerLink="shop-kits" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop Kits</button>
+        <button class="nav-button animate-fadeIn" routerLink="kits" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop Kits</button>
       </div>
     </div>
   `,
